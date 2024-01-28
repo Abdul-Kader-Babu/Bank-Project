@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Bank.css">
+</head>
+<body>
+    <div class="login">
+        <div id="login_content">
+            <h3>SOCIAL ISLAMI BANK</h3>
+            <form action="">
+                <label id="label" for="">Login</label> <br>
+                <span id="emailspan"><p>Enter The Email Please</p></span>
+
+                <input id="mail" type="email" placeholder="Email"> <br> 
+                
+                <span id="passspan"><p>Enter The password Please</p></span>
+
+                <input id="password" type="password" placeholder="Password">
+
+                <input  type="submit" value="Enter">
+            </form>
+        </div>
+    </div>
+<!-- login page end here  -->
+    <div class="transaction">
+        <div class="transaction_top">
+            <div class="deposit transact" >
+                <h4>Deposit</h4>
+                <h1>$ <span id="deposit_value">00</span></h1>
+            </div>
+            <div class="withdraw transact">
+                <h4>Withdraw</h4>
+                <h1>$ <span id="withdraw_value">00</span></h1>
+
+            </div>
+            <div class="balance transact">
+                <h4>Balance</h4>
+                <h1>$ <span id="balance_value">00</span></h1>
+
+            </div>
+        </div>
+        <div class="transaction_bottom">
+            <div id="deposit">
+                <h2>Deposit</h2>
+                <input id="deposit_input" class="input" type="number" placeholder="$ amount you want to deposit" maxlength="2">
+                <span id="depositP">Enter The Amount You Want To Deposit</span>
+                <input id="deposit_submit" type="submit" value="Deposit">
+            </div>
+            <div id="withdraw">
+                <h2>Withdraw</h2>
+                <input id="withdraw_Amount" class="input" type="number" placeholder="$ amount you want to withdraw">
+                <span id="withDrawP">Enter The Amount You Want To Deposit</span>
+                <input id="withdraw_submit" type="submit" value="Withdraw">
+            </div>
+        </div>
+    </div>
+    <script src="Bank.js"></script>
+</body>
+</html>
